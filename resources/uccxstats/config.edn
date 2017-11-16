@@ -1,0 +1,15 @@
+{:duct.core/project-ns  uccxstats
+ :duct.core/environment :production
+
+ :duct.module/logging {}
+ :duct.module.web/api {}
+ :duct.module/sql {}
+ :duct.module/cljs {:main uccxstats.client}
+
+ :duct.module/ataraxy
+ {"/rtstats"
+  {[:get]           [:stats/icd]}}
+
+ :uccxstats.handler.stats/icd {:db #ig/ref :duct.database/sql}
+ :uccxstats.handler.stats/csq {:db #ig/ref :duct.database/sql}
+ }

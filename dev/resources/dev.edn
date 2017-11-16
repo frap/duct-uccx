@@ -1,0 +1,22 @@
+{:duct.core/environment :development
+ :duct.core/include ["uccxstats/config"]
+
+ :duct.module/sql
+ {:database-url "jdbc:informix-sqli://9.1.1.62:1504/db_cra:informixserver=atea_dev_uccx11_uccx;user=wallboarduser;password=ateasystems0916"
+
+
+  }
+
+ :duct.migrator/ragtime { :strategy :raise-error }
+ }
+
+
+{:database-url "jdbc:oracle:thin:gas/Cisco123@9.1.1.217:1521:XE"
+   :connection-timeout 2000
+   :pool-name "gas-test"
+   :username "atea_uaw"
+   :password "nz1c3"
+   :implicitCachingEnabled true
+   :datasource "oracle.jdbc.pool.OracleDataSource"
+
+  }
