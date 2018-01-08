@@ -1,13 +1,13 @@
-(defproject uccxstats "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
+(defproject uccxstats "0.1.1-SNAPSHOT"
+  :description "Duct based UCCXStats trial"
   :url "http://example.com/FIXME"
   :min-lein-version "2.0.0"
-  :dependencies [[org.clojure/clojure "1.9.0-RC1"]
-                 [duct/core "0.6.1"]
+  :dependencies [[org.clojure/clojure "1.9.0"]
+                 [duct/core "0.6.2"]
                  [duct/module.logging "0.3.1"]
-                 [duct/module.web "0.6.3"]
+                 [duct/module.web "0.6.4"]
                  [duct/module.ataraxy "0.2.0"]
-                 [duct/module.cljs "0.3.1"]
+                 [duct/module.cljs "0.3.2"]
                  [duct/module.sql "0.4.2"]
                  [org.postgresql/postgresql "42.1.4"]
                  [com.informix/ifxjdbc "4.10.JC8DE"]
@@ -31,5 +31,5 @@
    :project/dev  {:source-paths   ["dev/src"]
                   :resource-paths ["dev/resources"]
                   :dependencies   [[integrant/repl "0.2.0"]
-                                   [eftest "0.4.0"]
+                                   [eftest "0.4.1"]
                                    [kerodon "0.9.0"]]}})
